@@ -49,6 +49,26 @@
     height: 30vh;
 }
 
+.info-section {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10rem 5rem 4rem;
+}
+
+.info-section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2em;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.info-section > div > p {
+   font-size: 1.5em;
+   font-weight: bold;
+}
+
 form{
     padding: 20px 40px;
     width: 100%;
