@@ -11,6 +11,9 @@
     margin: 0;
 }
 
+body {
+  font-family:  "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 
 .main-container {
     display: flex;
@@ -37,7 +40,7 @@
 
 .image-container > h1 {
     background-color: rgba(0, 0, 0, 0.4);
-    margin-top: 15vh;
+    margin-top: 10vh;
     font-size: 5.2rem;
     font-family: 'norse' ;
 }
@@ -62,7 +65,7 @@
 .info-section {
     display: flex;
     justify-content: flex-end;
-    padding: 0 10rem 5rem 4rem;
+    padding: 0 10rem 4rem 4rem;
 }
 
 .info-section > div {
@@ -77,6 +80,11 @@
 .info-section > div > p {
    font-size: 1.5em;
    font-weight: bold;
+}
+
+.details {
+    box-shadow: 0 8px 8px -4px rgb(207, 207, 207);
+    padding-bottom: 1rem;
 }
 
 form{
@@ -98,12 +106,13 @@ form > div > div {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 1.2rem;
 }
 
 form > div > div > p {
     display: flex;
     flex-direction: column;
-    gap: 0.2vh;
+    gap: 0.5vh;
 }
 
 form > h2 {
@@ -114,21 +123,39 @@ form > h2 {
 input {
     height: 3vh;
     border-radius: 5px;
-    border: 1px solid lightgrey
+    border: 2px solid lightgrey;
+    width: 250px;
 }
+
+input:focus,
+input:invalid:focus {
+    outline: none;
+    border: 2px solid rgb(60, 122, 214);
+    box-shadow: 0 0 5px 0 rgb(122, 122, 122);
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+
+label {
+    color: rgb(88, 88, 88);
+    font-weight: bold;
+}
+
 
 button {
     color: white;
     background-color: rgba(0, 153, 204, 1.0);
-    height: 3rem;
     border: 1px solid lightgray;
     border-radius: 10px;
     cursor: pointer;
-    font-size: medium;
+    font-size: 1.5rem;
     font-weight: 550;
     text-align: center;
-    padding: 1px 3.5rem;
+    padding: 1rem 3.5rem;
     margin-bottom: 3vh;
+    box-shadow: 0 8px 8px -4px lightblue;
 }
 
 button:hover,
