@@ -78,3 +78,20 @@ form > div > div {
 form > h1 {
     text-align: start;
 }
+
+a:link {
+    color: rgb(133, 213, 250);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(12, 84, 143);
+}
+
+a:hover {
+    color: lightblue;
+}
+
+a:visited:not(:hover) {
+    color: rgb(64, 143, 207);
+}
