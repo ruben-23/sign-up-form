@@ -1,3 +1,16 @@
+
+@font-face{
+    font-family: 'norse';
+    src: url('./fonts/Norse-Bold.woff2') format('woff2'),
+    url('./fonts/Norse-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    /* font-size: 5.3rem; */
+}
+
+
+
+
 * {
     margin: 0;
 }
@@ -30,6 +43,7 @@
     background-color: rgba(0, 0, 0, 0.4);
     margin-top: 15vh;
     font-size: 5.2rem;
+    font-family: 'norse' ;
 }
 
 .content-container {
