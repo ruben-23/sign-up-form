@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.image-container {
+    background-image: url('./images/john-noonan-E-9CFTftQh4-unsplash.jpg');
+    background-size: cover;
+    width: 60vw;
+    /* height: 100vh; */
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    padding: 20px 0px;
+}
+
+.image-container > p, h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.image-container > h1 {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 15vh;
+    font-size: 5.2rem;
+}
+
+.content-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+}
+
+.content-container > * {
+    height: 33.33vh;
+    align-items: flex-start;
+}
+
+.details {
+    display: flex;
+    /* align-items: flex-start; */
+    /* height: 100%; */
+}
+
+.content-container > div:nth-child(odd) {
+    background-color: lightgray;
+
+}
+
+form{
+    padding: 20px;
+}
+
+form > div {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.9rem;
+    height: 100%;
+}
+
+form > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+form > h1 {
+    text-align: start;
+}
