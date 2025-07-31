@@ -53,8 +53,7 @@
 }
 
 .content-container > div:nth-child(odd) {
-    background-color: lightgray;
-
+    background-color: rgba(0, 51, 102, 0.03);
 }
 
 form{
@@ -63,28 +62,13 @@ form{
     height: 100%;
 }
 
-/* form > div {
-
-    display: flex;
-    flex-wrap: wrap;
-    gap:0.9rem;
-    height: 100%;
-}
-
-form > div > div {
-    display: flex;
-    flex-direction: column;
-    gap: 0.9rem;
-} */
-
 form > div  {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
-    gap: 1rem;
+    gap: 1.5rem;
     margin-top: 1vh;
-    
 }
 
 form > div> div {
@@ -99,11 +83,29 @@ form > div > div > p {
     gap: 0.2vh;
 }
 
-
-form > h1 {
+form > h2 {
     text-align: start;
-    padding: 20px 0;
+    padding: 10px;
 }
+
+input {
+    height: 2vh;
+    border-radius: 5px;
+    border: 1px solid lightgrey
+}
+
+button {
+    background-color: rgba(0, 153, 204, 0.9);
+    height: 3rem;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: 550;
+    text-align: center;
+    padding: 1rem 3.5rem;
+}
+
 
 a:link {
     color: rgb(133, 213, 250);
