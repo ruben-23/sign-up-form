@@ -5,11 +5,7 @@
     url('./fonts/Norse-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    /* font-size: 5.3rem; */
 }
-
-
-
 
 * {
     margin: 0;
@@ -116,13 +112,14 @@ form > h2 {
 }
 
 input {
-    height: 2vh;
+    height: 3vh;
     border-radius: 5px;
     border: 1px solid lightgrey
 }
 
 button {
-    background-color: rgba(0, 153, 204, 0.9);
+    color: white;
+    background-color: rgba(0, 153, 204, 1.0);
     height: 3rem;
     border: 1px solid lightgray;
     border-radius: 10px;
@@ -134,9 +131,14 @@ button {
     margin-bottom: 3vh;
 }
 
+button:hover,
+button:focus {
+    background-color: rgba(62, 97, 109, 0.9);
+}
+
 
 a:link {
-    color: rgb(133, 213, 250);
+    color: rgb(64, 143, 207);
     text-decoration: none;
 }
 
